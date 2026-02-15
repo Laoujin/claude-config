@@ -21,3 +21,6 @@ todos/
 
 # Per-project auto-memory (tracked per-project, not globally)
 projects/
+
+# BMAD
+_bmad/
