@@ -1,0 +1,23 @@
+# Credentials & secrets
+.credentials.json
+
+# Claude Code runtime/cache
+cache/
+debug/
+downloads/
+file-history/
+history.jsonl
+ide/
+paste-cache/
+plans/
+plugins/
+shell-snapshots/
+stats-cache.json
+statsig/
+tasks/
+telemetry/
+todos/
+.claude/
+
+# Per-project auto-memory (tracked per-project, not globally)
+projects/
