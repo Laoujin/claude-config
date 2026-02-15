@@ -17,16 +17,14 @@ Use the pattern: **`MethodName_Scenario_ExpectedResult`**
 
 ```csharp
 [Test]
-public void Calculate_NegativeQuantity_ThrowsArgumentException()
+public void Calculate_NegativeQuantity_ThrowsArgumentException() { }
 [Test]
-public void Calculate_ValidOrder_ReturnsTotalWithTax()
+public void Calculate_ValidOrder_ReturnsTotalWithTax() { }
 [Test]
-public async Task GetOrderAsync_NonExistentId_ReturnsNull()
+public async Task GetOrderAsync_NonExistentId_ReturnsNull() { }
 ```
 
 ## Test Structure
-
-Arrange / Act / Assert -- don't add these as comments in every test:
 
 ```csharp
 [Test]

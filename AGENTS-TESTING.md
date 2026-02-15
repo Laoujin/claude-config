@@ -61,11 +61,7 @@ Prefer state testing when possible -- it couples tests to outcomes rather than i
 
 ## Classicist over Mockist
 
-- **Prefer sociable tests** -- use real implementations where possible
-- Mock only **slow things** (database, filesystem, HTTP, network) and **awkward things** (payment systems, email, third-party APIs)
-- Use real implementations for everything else -- business logic, mappers, validators
-- What to mock depends on the level of test (unit vs integration)
-- Tests should survive refactoring -- **test behavior, not implementation details**
+Prefer sociable tests. Mock only slow or awkward dependencies (database, filesystem, HTTP, payment systems, email) -- use real implementations for everything else. What to mock depends on the level of test. **Test behavior, not implementation details.**
 
 | | Mockist / Solitary | Classicist / Sociable |
 |---|---|---|
@@ -82,7 +78,8 @@ Prefer state testing when possible -- it couples tests to outcomes rather than i
 - **Failures should be informative** -- a failing test tells you exactly what is wrong
 - Avoid **tautological tests** -- don't just repeat the production code in the test
 - Make sure your test **can fail** -- verify you're testing what you think you're testing
-- Avoid **brittle tests** that break on refactoring
+- Avoid **brittle tests** -- tests coupled to implementation details break on every refactor without catching real bugs
+- **Only test production code** -- don't test framework behavior, library internals, or your mocking setup
 
 ---
 
@@ -95,15 +92,6 @@ Use the **Arrange / Act / Assert** (AAA) pattern, or equivalently **Given / When
 3. **Assert** -- verify the outcome
 
 Don't add AAA/GWT as comments in every test -- the structure should be self-evident from whitespace separation.
-
----
-
-## Common Pitfalls
-
-- **Only test production code** -- don't test framework behavior, library internals, or your mocking setup
-- **Make sure your test can fail** -- run it with a wrong assertion at least once to verify it's actually testing what you think
-- **Avoid brittle tests** -- tests coupled to implementation details break on every refactor without catching real bugs
-- **Failures should be informative** -- avoid opaque assertions on large collections; a failing test should tell you exactly what went wrong
 
 ---
 
