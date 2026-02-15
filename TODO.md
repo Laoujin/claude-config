@@ -3,8 +3,8 @@
 ## Commit Hygiene section (CLAUDE.md)
 - [ ] Decide on commit message convention: Conventional Commits (`feat:`, `fix:`) vs freeform
 - [ ] Decide on ticket prefix format: `#42` (GitHub) vs `PROJ-42` (Jira) vs none
-- [ ] Review and merge `CLAUDE-commit-pr-draft.md` into `CLAUDE.md`
-- [ ] Delete `CLAUDE-commit-pr-draft.md` after merge
+- [x] ~~Review and merge `CLAUDE-commit-pr-draft.md` into `CLAUDE.md`~~
+- [x] ~~Delete `CLAUDE-commit-pr-draft.md` after merge~~
 
 ## PR Hygiene section (CLAUDE.md)
 - [ ] Review PR body template (Summary + Test Plan) — adjust if needed

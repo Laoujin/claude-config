@@ -34,6 +34,39 @@ When I'm in expert territory, skip the preamble and give me the answer. Don't ex
 - Don't commit, push, or add dependencies without me asking.
 - When a project has linters/analyzers configured, respect them — zero warnings.
 
+## Commit Hygiene
+
+- **One concern per commit.** Each commit addresses a single logical change — don't mix a bug fix with a refactor or formatting cleanup.
+- **Short imperative subject line, max 72 chars.** Describe what changed and why. No period at the end.
+- **Add a body when the "why" isn't obvious** from the diff — blank line after subject, then explain context.
+- **No noise in commits:**
+  - No `console.log`, `debugger`, commented-out code, or TODO leftovers.
+  - No formatting-only changes mixed into feature commits.
+  - No generated/empty files (empty `.spec`, empty `.scss`, etc.).
+  - No local config, credentials, or machine-specific settings.
+- **Stage deliberately.** Only stage files relevant to the commit — don't `git add -A` blindly.
+- **Review before committing.** Mentally `git diff --staged` — verify every hunk belongs.
+- **No `Co-Authored-By` trailers.** Never add co-author attribution lines.
+
+## Pull Request Hygiene
+
+- **Small, reviewable PRs.** One feature or fix per PR. If a PR touches 20+ files, consider splitting.
+- **Title:** short imperative summary, max 72 chars — e.g. `Add symlink conflict detection`.
+- **Body format:**
+  ```
+  ## Summary
+  <2-4 bullet points: what changed and why>
+
+  ## Test Plan
+  - [ ] Relevant checklist items for verifying the change
+  ```
+- **Link issues** — use `Closes #N` / `Fixes #N` in the body when applicable.
+- **No junk in the diff:**
+  - No unrelated formatting, import reordering, or whitespace changes.
+  - No leftover debug artifacts or unused dependencies.
+  - Review "Files changed" before submitting — if something doesn't belong, drop it.
+- **No promotional footers or tool attribution** in PR descriptions.
+
 ## Self-Improving Config
 
 - When I allow/deny a command, suggest adding a general allow/deny rule to `~/.claude/settings.json` so the preference persists across sessions.
