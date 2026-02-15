@@ -1,0 +1,109 @@
+{
+  "enabledPlugins": {
+    "ui-checker@kobozo-plugins": false,
+    "api-documenter@kobozo-plugins": false,
+    "test-suite-generator@kobozo-plugins": false,
+    "security-auditor@kobozo-plugins": false,
+    "performance-optimizer@kobozo-plugins": false,
+    "data-privacy-manager@kobozo-plugins": false,
+    "db-schema-manager@kobozo-plugins": false,
+    "i18n-manager@kobozo-plugins": false,
+    "onboarding-assistant@kobozo-plugins": false,
+    "code-architect@kobozo-plugins": false,
+    "clean-code-checker@kobozo-plugins": false,
+    "documentation-writer@kobozo-plugins": false,
+    "bug-fixer@kobozo-plugins": false,
+    "docker-compose-manager@kobozo-plugins": false,
+    "brainstorm@kobozo-plugins": false,
+    "dead-code-detector@kobozo-plugins": false,
+    "feature-dev@kobozo-plugins": false,
+    "agent-sdk-dev@kobozo-plugins": false,
+    "commit-commands@kobozo-plugins": false,
+    "pr-review-toolkit@kobozo-plugins": false,
+    "security-guidance@kobozo-plugins": false,
+    "feature-flags@kobozo-plugins": false,
+    "image-generator@kobozo-plugins": false,
+    "code-expert-agent@kobozo-plugins": false,
+    "code-review@kobozo-plugins": false,
+    "explanatory-output-style@kobozo-plugins": false,
+    "frontend-design@kobozo-plugins": false,
+    "hookify@kobozo-plugins": false,
+    "learning-output-style@kobozo-plugins": false,
+    "plugin-dev@kobozo-plugins": false,
+    "ralph-wiggum@kobozo-plugins": false
+  },
+  "autoUpdatesChannel": "latest",
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(dotnet *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(node *)",
+      "Bash(docker *)",
+      "Bash(docker-compose *)",
+      "Bash(kubectl *)",
+      "Bash(terraform *)",
+      "Bash(gh *)",
+      "Bash(pwsh *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(rm *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(which *)",
+      "Bash(where *)",
+      "Bash(echo *)",
+      "Bash(curl *)",
+      "Bash(pip *)",
+      "Bash(python *)",
+      "Bash(ruby *)",
+      "Bash(bundle *)",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": [
+      "Read(**/*.env)",
+      "Read(**/*.key)",
+      "Read(**/*.pem)",
+      "Read(**/*credentials*)",
+      "Read(**/.ssh/*)",
+      "Read(**/*secret*)",
+      "Edit(**/*.env)",
+      "Edit(**/*.key)",
+      "Edit(**/*.pem)",
+      "Edit(**/*credentials*)",
+      "Edit(**/.ssh/*)",
+      "Edit(**/*secret*)",
+      "Write(**/*.env)",
+      "Write(**/*.key)",
+      "Write(**/*.pem)",
+      "Write(**/*credentials*)",
+      "Write(**/.ssh/*)",
+      "Write(**/*secret*)"
+    ]
+  },
+  "alwaysThinkingEnabled": true,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "FILE=$(echo \"$TOOL_INPUT\" | jq -r '.file_path // empty' 2>/dev/null || true); if [[ \"$FILE\" == *.cs ]]; then dotnet format --include \"$FILE\" 2>/dev/null; fi; exit 0",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
