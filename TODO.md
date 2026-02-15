@@ -26,6 +26,25 @@
   - [ ] Linter/formatter config
 - [ ] GitHub template repos: create org-level templates at github.com/itenium-be?
 
+## AGENTS files for other stacks
+- [ ] `AGENTS-TYPESCRIPT-STYLE.md` — conventions for TS/React/Angular/Node
+- [ ] `AGENTS-TYPESCRIPT-TESTING.md` — Jest/Vitest conventions, mocking patterns
+- [ ] Decide granularity: one per stack (React, Angular, Node) or one unified TS file?
+
+## MCP servers
+- [ ] Audit what's global (`.mcp.json`) vs project-level — document the split
+- [ ] Context7 — move to global if used across projects
+- [ ] Evaluate other useful global MCP servers
+
+## Hooks
+- [ ] Add Prettier hook for TS/JS/CSS files (mirror the dotnet format hook)
+- [ ] Consider a pre-commit lint hook
+- [ ] Document hook conventions so new project setups are consistent
+
+## Keybindings
+- [ ] Create `keybindings.json` if customizations are needed
+- [ ] Track in git once created
+
 ## Other
 - [ ] Review `memory/` — decide what to track vs gitignore
 - [ ] Audit `settings.json` deny rules — are all sensitive patterns covered?
