@@ -92,18 +92,5 @@
     ]
   },
   "alwaysThinkingEnabled": true,
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "FILE=$(echo \"$TOOL_INPUT\" | jq -r '.file_path // empty' 2>/dev/null || true); if [[ \"$FILE\" == *.cs ]]; then dotnet format --include \"$FILE\" 2>/dev/null; fi; exit 0",
-            "timeout": 30
-          }
-        ]
-      }
-    ]
-  }
+  "hooks": {}
 }
