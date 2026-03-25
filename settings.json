@@ -59,6 +59,10 @@
     ]
   },
   "alwaysThinkingEnabled": true,
+  "statusLine": {
+    "type": "command",
+    "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/woute/.claude/scripts/statusline.ps1"
+  },
   "hooks": {
     "Notification": [
       {
