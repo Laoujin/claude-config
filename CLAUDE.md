@@ -23,6 +23,7 @@ Direct/terse. No filler. Show only changed code, not entire files.
 - Run tests after changes.
 - Don't commit/push/add deps without asking.
 - Zero linter warnings.
+- Use bun/bunx, not npm/npx.
 
 ## Commits
 One concern per commit. Imperative subject ≤72 chars. No noise (console.log, commented code, empty files). Stage deliberately. No Co-Authored-By.
