@@ -1,4 +1,9 @@
 {
+  "autoUpdatesChannel": "latest",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "permissions": {
     "allow": [
       "Bash(git *)",
@@ -75,6 +80,5 @@
     "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/woute/.claude/scripts/statusline.ps1"
   },
   "alwaysThinkingEnabled": true,
-  "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true
 }

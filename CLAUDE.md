@@ -27,7 +27,7 @@ Markdown tables: pad cells so columns line up in monospace. Use reference-style 
 - Use bun/bunx, not npm/npx.
 
 ## Commits
-One concern per commit. Imperative subject ≤72 chars. No noise (console.log, commented code, empty files). Stage deliberately. No Co-Authored-By.
+One concern per commit. Imperative subject ≤72 chars. No noise (console.log, commented code, empty files). Stage deliberately.
 
 ## PRs
 Small, one feature/fix. Title ≤72 chars. Body: Summary bullets + Test Plan checklist. No junk in diff, no attribution footers.
