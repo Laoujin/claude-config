@@ -69,7 +69,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/wouter/.claude/scripts/notify.ps1"
+            "command": "bash ~/.claude/scripts/statusline.sh"
           }
         ]
       }
