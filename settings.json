@@ -1,5 +1,4 @@
 {
-  "autoUpdatesChannel": "latest",
   "permissions": {
     "allow": [
       "Bash(git *)",
@@ -58,11 +57,6 @@
       "Write(**/*secret*)"
     ]
   },
-  "alwaysThinkingEnabled": true,
-  "statusLine": {
-    "type": "command",
-    "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/woute/.claude/scripts/statusline.ps1"
-  },
   "hooks": {
     "Notification": [
       {
@@ -75,5 +69,12 @@
         ]
       }
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/woute/.claude/scripts/statusline.ps1"
+  },
+  "alwaysThinkingEnabled": true,
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true
 }
