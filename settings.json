@@ -1,5 +1,4 @@
 {
-  "autoUpdatesChannel": "latest",
   "attribution": {
     "commit": "",
     "pr": ""
@@ -60,7 +59,8 @@
       "Write(**/*credentials*)",
       "Write(**/.ssh/*)",
       "Write(**/*secret*)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "hooks": {
     "Notification": [
@@ -80,5 +80,7 @@
     "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/woute/.claude/scripts/statusline.ps1"
   },
   "alwaysThinkingEnabled": true,
-  "skipDangerousModePermissionPrompt": true
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true
 }
