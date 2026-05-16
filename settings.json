@@ -62,22 +62,9 @@
     ],
     "defaultMode": "auto"
   },
-  "hooks": {
-    "Notification": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash ~/.claude/scripts/statusline.sh"
-          }
-        ]
-      }
-    ]
-  },
   "statusLine": {
     "type": "command",
-    "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/woute/.claude/scripts/statusline.ps1"
+    "command": "bash ~/.claude/scripts/statusline.sh"
   },
   "alwaysThinkingEnabled": true,
   "autoUpdatesChannel": "latest",
