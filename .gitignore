@@ -22,6 +22,8 @@ todos/
 # Per-project auto-memory (tracked per-project, not globally)
 projects/
 
+mcp-needs-auth-cache.json
+
 # BMAD
 _bmad/
 backups/
