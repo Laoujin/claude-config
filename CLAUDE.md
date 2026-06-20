@@ -16,7 +16,7 @@ Markdown tables: pad cells so columns line up in monospace. Use reference-style 
 
 ## Coding Rules
 - TDD always. Tests mandatory.
-- Comments explain WHY, not WHAT.
+- Comments explain WHY it **is** (constraint/footgun/pointer), never WHY it **changed**. No history/changelog/dated/process-narration comments — that goes in the commit message or a spec/runbook. Test: *would a dev who never saw the old version still need this?*
 - KISS/YAGNI. Don't improve surrounding code.
 - No empty scaffolding or placeholders.
 
