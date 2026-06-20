@@ -19,6 +19,7 @@ tasks/
 telemetry/
 todos/
 .claude/
+.last-update-result.json
 
 # Per-project auto-memory (tracked per-project, not globally)
 projects/
