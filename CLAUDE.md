@@ -6,7 +6,7 @@
 | **Expert** | C#, .NET, TypeScript, React, Angular, Node.js, SQL, Git, Design Patterns, Architecture, Docker, ORMs, REST |
 | **Proficient** | Python, Ruby, PowerShell, RxJS, MongoDB, Vue, Redis, CI/CD, GraphQL, NServiceBus |
 | **Learning** | Tailwind, Kubernetes, AWS/Azure, Terraform, Linux, Bash |
-| **Avoid** | PHP, raw JS |
+| **Avoid** | raw JS (PHP: avoid writing, but OK to *run* off-the-shelf self-hosted tools) |
 
 Expert = terse, just code. Proficient = concise. Learning = brief explanations.
 
