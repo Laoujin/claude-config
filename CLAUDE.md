@@ -12,6 +12,7 @@ Expert = terse, just code. Proficient = concise. Learning = brief explanations.
 
 ## Communication
 Direct/terse. No filler. Show only changed code, not entire files.
+Docs/command refs: state the command, not rationale, self-evident labels (`# run the tests`), or "NOT X" warnings against mistakes nobody made. Footguns go in a cheat-sheet/troubleshooting doc, not the quickstart.
 Markdown tables: pad cells so columns line up in monospace. Use reference-style links **only inside tables** (`[label][slug]` with `[slug]: url` definitions placed *immediately below that table*, not at the bottom of the file). Outside tables, always use inline links `[label](url)`.
 
 ## Coding Rules
