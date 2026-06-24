@@ -66,6 +66,13 @@
     "type": "command",
     "command": "bash ~/.claude/scripts/statusline.sh"
   },
+  "subagentStatusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/scripts/subagent-statusline.sh"
+  },
+  "enabledPlugins": {
+    "superpowers@superpowers-marketplace": true
+  },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
       "source": {
@@ -77,8 +84,36 @@
   "alwaysThinkingEnabled": true,
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
+  "theme": "dark",
+  "editorMode": "normal",
   "skipAutoPermissionPrompt": true,
-  "enabledPlugins": {
-    "superpowers@superpowers-marketplace": true
-  }
+  "tui": "fullscreen",
+  "env": {
+    "FORCE_HYPERLINK": "1",
+    "EDITOR": "vim"
+  },
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "Itenium-ing",
+      "Over-engineering",
+      "Bikeshedding",
+      "Summoning Skynet",
+      "Reticulating splines",
+      "Blaming the intern",
+      "Consulting the rubber duck"
+    ]
+  },
+  "footerLinksRegexes": [
+    {
+      "type": "regex",
+      "pattern": "CVE-(?<cve>\\d{4}-\\d+)",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-{cve}",
+      "label": "CVE-{cve}"
+    }
+  ],
+  "companyAnnouncements": [
+    "itenium AI Extending your Agent, like a champ"
+  ]
 }
