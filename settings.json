@@ -115,5 +115,10 @@
   ],
   "companyAnnouncements": [
     "itenium AI Extending your Agent, like a champ"
-  ]
+  ],
+  "spinnerTipsOverride": {
+    "tips": [
+      "💡 itenium tip: the description IS the interface"
+    ]
+  }
 }
