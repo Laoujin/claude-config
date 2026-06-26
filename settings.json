@@ -6,6 +6,7 @@
   },
   "includeGitInstructions": false,
   "autoCompactEnabled": false,
+  "fileCheckpointingEnabled": true,
   "permissions": {
     "allow": [
       "Bash(git *)",
