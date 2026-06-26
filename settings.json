@@ -1,8 +1,10 @@
 {
   "attribution": {
     "commit": "",
-    "pr": ""
+    "pr": "",
+    "sessionUrl": false
   },
+  "includeGitInstructions": false,
   "permissions": {
     "allow": [
       "Bash(git *)",
