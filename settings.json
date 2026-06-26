@@ -5,6 +5,7 @@
     "sessionUrl": false
   },
   "includeGitInstructions": false,
+  "autoCompactEnabled": false,
   "permissions": {
     "allow": [
       "Bash(git *)",
