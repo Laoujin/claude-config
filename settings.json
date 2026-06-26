@@ -88,7 +88,7 @@
   },
   "alwaysThinkingEnabled": true,
   "autoUpdatesChannel": "latest",
-  "skipDangerousModePermissionPrompt": true,
+  "skipDangerousModePermissionPrompt": false,
   "skipWorkflowUsageWarning": true,
   "theme": "dark",
   "editorMode": "normal",
