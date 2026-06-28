@@ -87,7 +87,9 @@
   },
   "enabledPlugins": {
     "superpowers@superpowers-marketplace": true,
-    "slidev@slidev-dev-marketplace": true
+    "slidev@slidev-dev-marketplace": true,
+    "extending-your-agent-tutorial@extending-your-agent": true,
+    "figlet-text-converter@skillsforge-marketplace": true
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
@@ -102,10 +104,16 @@
         "repo": "rhuss/cc-slidev"
       }
     },
-    "claude-plugins-official": {
+    "extending-your-agent": {
+      "source": {
+        "source": "directory",
+        "path": "/mnt/c/Users/woute/Dropbox/Personal/Programming/UnixCode/courses/2026-07-01-Extending-Your-Agent"
+      }
+    },
+    "skillsforge-marketplace": {
       "source": {
         "source": "github",
-        "repo": "anthropics/claude-plugins-official"
+        "repo": "rawveg/skillsforge-marketplace"
       }
     }
   },
