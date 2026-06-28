@@ -7,7 +7,7 @@
   "includeGitInstructions": false,
   "autoCompactEnabled": false,
   "fileCheckpointingEnabled": true,
-  "fastMode": true,
+  "fastMode": false,
   "permissions": {
     "allow": [
       "Bash(git *)",
