@@ -1,13 +1,15 @@
 {
+  "env": {
+    "FORCE_HYPERLINK": "1",
+    "EDITOR": "vim",
+    "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1"
+  },
   "attribution": {
     "commit": "",
     "pr": "",
     "sessionUrl": false
   },
   "includeGitInstructions": false,
-  "autoCompactEnabled": false,
-  "fileCheckpointingEnabled": true,
-  "fastMode": false,
   "permissions": {
     "allow": [
       "Bash(git *)",
@@ -71,12 +73,21 @@
     "type": "command",
     "command": "bash ~/.claude/scripts/statusline.sh"
   },
+  "footerLinksRegexes": [
+    {
+      "type": "regex",
+      "pattern": "CVE-(?<cve>\\d{4}-\\d+)",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-{cve}",
+      "label": "CVE-{cve}"
+    }
+  ],
   "subagentStatusLine": {
     "type": "command",
     "command": "bash ~/.claude/scripts/subagent-statusline.sh"
   },
   "enabledPlugins": {
-    "superpowers@superpowers-marketplace": true
+    "superpowers@superpowers-marketplace": true,
+    "slidev@slidev-dev-marketplace": true
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
@@ -84,20 +95,13 @@
         "source": "github",
         "repo": "obra/superpowers-marketplace"
       }
+    },
+    "slidev-dev-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "rhuss/cc-slidev"
+      }
     }
-  },
-  "alwaysThinkingEnabled": true,
-  "autoUpdatesChannel": "latest",
-  "skipDangerousModePermissionPrompt": false,
-  "skipWorkflowUsageWarning": true,
-  "theme": "dark",
-  "editorMode": "normal",
-  "skipAutoPermissionPrompt": true,
-  "tui": "fullscreen",
-  "env": {
-    "FORCE_HYPERLINK": "1",
-    "EDITOR": "vim",
-    "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1"
   },
   "spinnerVerbs": {
     "mode": "replace",
@@ -111,20 +115,23 @@
       "Consulting the rubber duck"
     ]
   },
-  "footerLinksRegexes": [
-    {
-      "type": "regex",
-      "pattern": "CVE-(?<cve>\\d{4}-\\d+)",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-{cve}",
-      "label": "CVE-{cve}"
-    }
-  ],
-  "companyAnnouncements": [
-    "itenium AI Extending your Agent, like a champ"
-  ],
   "spinnerTipsOverride": {
     "tips": [
       "💡 itenium tip: the description IS the interface"
     ]
-  }
+  },
+  "alwaysThinkingEnabled": true,
+  "fastMode": false,
+  "companyAnnouncements": [
+    "itenium AI Extending your Agent, like a champ"
+  ],
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": false,
+  "skipWorkflowUsageWarning": true,
+  "theme": "dark",
+  "editorMode": "normal",
+  "autoCompactEnabled": false,
+  "fileCheckpointingEnabled": true,
+  "skipAutoPermissionPrompt": true
 }
