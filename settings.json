@@ -6,13 +6,34 @@
   },
   "hooks": {
     "SessionStart": [
-      { "hooks": [ { "type": "command", "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash ~/.claude/hooks/notify-capture.sh" } ] }
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash /mnt/c/temp/notify/hooks/notify-capture.sh"
+          }
+        ]
+      }
     ],
     "Stop": [
-      { "hooks": [ { "type": "command", "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash ~/.claude/hooks/notify-fire.sh done" } ] }
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash /mnt/c/temp/notify/hooks/notify-fire.sh done"
+          }
+        ]
+      }
     ],
     "Notification": [
-      { "hooks": [ { "type": "command", "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash ~/.claude/hooks/notify-fire.sh needs-input" } ] }
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash /mnt/c/temp/notify/hooks/notify-fire.sh needs-input"
+          }
+        ]
+      }
     ]
   },
   "attribution": {
