@@ -4,18 +4,6 @@
     "EDITOR": "vim",
     "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1"
   },
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash /mnt/c/temp/notify/hooks/notify-capture.sh"
-          }
-        ]
-      }
-    ]
-  },
   "attribution": {
     "commit": "",
     "pr": "",
@@ -98,7 +86,8 @@
     "superpowers@superpowers-marketplace": true,
     "slidev@slidev-dev-marketplace": true,
     "extending-your-agent-tutorial@extending-your-agent": true,
-    "figlet-text-converter@skillsforge-marketplace": true
+    "figlet-text-converter@skillsforge-marketplace": true,
+    "yoink@yoink-marketplace": true
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
@@ -123,6 +112,12 @@
       "source": {
         "source": "github",
         "repo": "rawveg/skillsforge-marketplace"
+      }
+    },
+    "yoink-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "itenium-be/Yoink"
       }
     }
   },
