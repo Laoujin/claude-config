@@ -14,26 +14,6 @@
           }
         ]
       }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash /mnt/c/temp/notify/hooks/notify-fire.sh done"
-          }
-        ]
-      }
-    ],
-    "Notification": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "CLAUDE_NOTIFY_DIR=/mnt/c/temp/notify bash /mnt/c/temp/notify/hooks/notify-fire.sh needs-input"
-          }
-        ]
-      }
     ]
   },
   "attribution": {
