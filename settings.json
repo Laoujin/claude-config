@@ -87,7 +87,8 @@
     "slidev@slidev-dev-marketplace": true,
     "extending-your-agent-tutorial@extending-your-agent": true,
     "figlet-text-converter@skillsforge-marketplace": true,
-    "yoink@yoink-marketplace": true
+    "yoink@yoink-marketplace": true,
+    "marketing-skills@marketingskills": true
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
@@ -118,6 +119,12 @@
       "source": {
         "source": "github",
         "repo": "itenium-be/Yoink"
+      }
+    },
+    "marketingskills": {
+      "source": {
+        "source": "github",
+        "repo": "coreyhaines31/marketingskills"
       }
     }
   },
