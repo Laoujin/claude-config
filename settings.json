@@ -85,8 +85,8 @@
   "enabledPlugins": {
     "superpowers@superpowers-marketplace": true,
     "slidev@slidev-dev-marketplace": true,
-    "extending-your-agent-tutorial@extending-your-agent": true,
-    "figlet-text-converter@skillsforge-marketplace": true,
+    "extending-your-agent-tutorial@extending-your-agent": false,
+    "figlet-text-converter@skillsforge-marketplace": false,
     "yoink@yoink-marketplace": true,
     "marketing-skills@marketingskills": true
   },
