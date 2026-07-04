@@ -1,5 +1,6 @@
 # Credentials & secrets
 .credentials.json
+.homelab.env
 
 # Claude Code runtime/cache
 cache/

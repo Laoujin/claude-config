@@ -33,5 +33,8 @@ One concern per commit. Imperative subject ≤72 chars. No noise (console.log, c
 ## PRs
 Small, one feature/fix. Title ≤72 chars. Body: Summary bullets + Test Plan checklist. No junk in diff, no attribution footers.
 
+## Homelab
+My projects are self-hosted on my homelab. When debugging something **deployed**, or when a task needs **deploy / logging / infra** access, read [`HOMELAB.md`](HOMELAB.md) first: deploys are almost always **Coolify**, logs almost always **Grafana/Loki**.
+
 ## Meta
 Suggest persisting allow/deny rules to settings.json. Suggest CLAUDE.md updates for recurring guidance. Project CLAUDE.md overrides this.
