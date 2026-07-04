@@ -35,8 +35,9 @@ bun run export   # export to .pptx
 ## After scaffolding
 
 - Fill in `slides.md` frontmatter: `title`, `subTitle`, `track` (lowercase),
-  `type`, `first` (YYYY-MM-DD). Optional: `lastUpdate`, `aspectRatio` (default
-  `16/10`; `16/9` for projectors — restart dev server, not hot-reloaded).
+  `type`, `first` (YYYY-MM-DD), `aspectRatio` (always set — the starter emits
+  `16/10`; use `16/9` for projectors, restart dev server, not hot-reloaded).
+  Optional: `lastUpdate`.
 - Write `ElevatorPitch.md` (abstract / audience / takeaways) — shown on the site.
 - To publish on the index site, add to the theme repo's `talks.yaml`:
   `- repo: itenium-be/my-talk` / `  published: true`.
