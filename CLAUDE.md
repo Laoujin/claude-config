@@ -26,6 +26,7 @@ Markdown tables: pad cells so columns line up in monospace. Use reference-style 
 - Don't commit/push/add deps without asking.
 - Zero linter warnings.
 - Use bun/bunx, not npm/npx.
+- Never use the Superpowers brainstorming "visual companion" / browser-URL feature. Keep brainstorming in the terminal UI.
 
 ## Commits
 One concern per commit. Imperative subject ≤72 chars. No noise (console.log, commented code, empty files). Stage deliberately.
