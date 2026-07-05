@@ -41,6 +41,27 @@ yoink/capture/
 yoink/notify.log
 yoink/sounds/
 
+# Installed skills — symlinks into ~/.agents/skills (machine-specific).
+# Own skills stay tracked by default; add a line here when you install one.
+skills/ask-matt
+skills/codebase-design
+skills/diagnosing-bugs
+skills/domain-modeling
+skills/find-skills
+skills/grill-me
+skills/grill-with-docs
+skills/grilling
+skills/handoff
+skills/improve-codebase-architecture
+skills/obsidian-vault
+skills/prototype
+skills/setup-matt-pocock-skills
+skills/teach
+skills/to-issues
+skills/to-prd
+skills/triage
+skills/writing-great-skills
+
 # BMAD
 _bmad/
 backups/
