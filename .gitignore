@@ -16,6 +16,13 @@ sessions/
 shell-snapshots/
 stats-cache.json
 statsig/
+daemon/
+daemon.lock
+daemon.log
+daemon.status.json
+image-cache/
+jobs/
+session-env/
 tasks/
 telemetry/
 todos/
