@@ -28,6 +28,12 @@ projects/
 mcp-needs-auth-cache.json
 .last-cleanup
 
+# Yoink runtime state (settings.json is tracked)
+yoink/sessions/
+yoink/capture/
+yoink/notify.log
+yoink/sounds/
+
 # BMAD
 _bmad/
 backups/
