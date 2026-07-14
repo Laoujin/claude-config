@@ -12,12 +12,12 @@ Expert = terse, just code. Proficient = concise. Learning = brief explanations.
 
 ## Communication
 Direct/terse. No filler. Show only changed code, not entire files.
-Docs/command refs: state the command, not rationale, self-evident labels (`# run the tests`), or "NOT X" warnings against mistakes nobody made. Footguns go in a cheat-sheet/troubleshooting doc, not the quickstart.
+Docs/command refs: state the command, not rationale, self-evident labels (`# run the tests`), or "NOT X" warnings against mistakes nobody made. Pitfalls go in a cheat-sheet/troubleshooting doc, not the quickstart.
 Markdown tables: pad cells so columns line up in monospace. Use reference-style links **only inside tables** (`[label][slug]` with `[slug]: url` definitions placed *immediately below that table*, not at the bottom of the file). Outside tables, always use inline links `[label](url)`.
 
 ## Coding Rules
 - TDD always. Tests mandatory.
-- Comments explain WHY it **is** (constraint/footgun/pointer), never WHY it **changed**. No history/changelog/dated/process-narration comments — that goes in the commit message or a spec/runbook. Test: *would a dev who never saw the old version still need this?*
+- Comments explain WHY it **is** (constraint/pitfall/pointer), never WHY it **changed** and never WHAT the code plainly does. No history/changelog/dated/process-narration comments; no explaining standard language/library/tool behaviour a competent reader already knows (flagging it as a pitfall does not license it — that's still noise). Both tests must pass: *would a dev who never saw the old version still need this?* AND *would a competent dev not already know it from the code?* A genuine pitfall that is really a deploy/setup step belongs in the runbook, not inline. When a comment mixes one real constraint with obvious mechanism, keep only the constraint.
 - KISS/YAGNI. Don't improve surrounding code.
 - No empty scaffolding or placeholders.
 
