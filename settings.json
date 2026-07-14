@@ -3,7 +3,7 @@
     "FORCE_HYPERLINK": "1",
     "EDITOR": "vim",
     "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
-    "CLAUDE_CODE_DISABLE_MOUSE_CLICKS": "1"
+    "CLAUDE_CODE_DISABLE_MOUSE": "1"
   },
   "attribution": {
     "commit": "",
@@ -152,7 +152,7 @@
     "itenium AI Extending your Agent, like a champ"
   ],
   "autoUpdatesChannel": "latest",
-  "tui": "fullscreen",
+  "tui": "default",
   "skipDangerousModePermissionPrompt": false,
   "skipWorkflowUsageWarning": true,
   "theme": "dark",
