@@ -86,11 +86,10 @@
   "enabledPlugins": {
     "superpowers@superpowers-marketplace": true,
     "slidev@slidev-dev-marketplace": true,
-    "extending-your-agent-tutorial@extending-your-agent": false,
-    "figlet-text-converter@skillsforge-marketplace": false,
     "yoink@yoink-marketplace": true,
     "marketing-skills@marketingskills": true,
-    "frontend-design@claude-plugins-official": true
+    "frontend-design@claude-plugins-official": true,
+    "scout@scout": true
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
@@ -105,18 +104,6 @@
         "repo": "rhuss/cc-slidev"
       }
     },
-    "extending-your-agent": {
-      "source": {
-        "source": "directory",
-        "path": "/mnt/c/Users/woute/Dropbox/Personal/Programming/UnixCode/courses/2026-07-01-Extending-Your-Agent"
-      }
-    },
-    "skillsforge-marketplace": {
-      "source": {
-        "source": "github",
-        "repo": "rawveg/skillsforge-marketplace"
-      }
-    },
     "yoink-marketplace": {
       "source": {
         "source": "github",
@@ -127,6 +114,18 @@
       "source": {
         "source": "github",
         "repo": "coreyhaines31/marketingskills"
+      }
+    },
+    "itenium-skills": {
+      "source": {
+        "source": "github",
+        "repo": "Itenium-Forge/Itenium.Skills"
+      }
+    },
+    "scout": {
+      "source": {
+        "source": "github",
+        "repo": "Laoujin/Scout"
       }
     }
   },
