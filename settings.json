@@ -51,19 +51,12 @@
       "Read(**/*.pem)",
       "Read(**/*credentials*)",
       "Read(**/.ssh/*)",
-      "Read(**/*secret*)",
       "Edit(**/*.env)",
       "Edit(**/*.key)",
       "Edit(**/*.pem)",
       "Edit(**/*credentials*)",
       "Edit(**/.ssh/*)",
-      "Edit(**/*secret*)",
-      "Write(**/*.env)",
-      "Write(**/*.key)",
-      "Write(**/*.pem)",
-      "Write(**/*credentials*)",
-      "Write(**/.ssh/*)",
-      "Write(**/*secret*)"
+      "Edit(**/*secret*)"
     ],
     "defaultMode": "auto"
   },
