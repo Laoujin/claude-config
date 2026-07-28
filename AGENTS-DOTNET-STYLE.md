@@ -3,12 +3,6 @@
 Judgment calls only. Anything an analyzer or `.editorconfig` enforces is deliberately absent —
 see the project's `.editorconfig`. For project-specific conventions, see the project's CLAUDE.md.
 
-## File Organization
-
-- At least one type per file must match the file name (`OrderService.cs` contains `OrderService`)
-- Small closely-related types (e.g. a record and its companion enum) may share a file
-- Folder structure mirrors namespaces: `MyApp.Services` -> `src/MyApp/Services/`
-
 ## Nullable
 
 Do not use the null-forgiving operator (`!`) unless you justify why in a comment. Annotate
@@ -20,15 +14,6 @@ accurately — don't mark things nullable "just in case".
 - **Classes** for stateful objects with behavior: services, engines, providers
 - **Record structs** for small value-type DTOs (2-3 fields max)
 - **Primary constructors** are optional — avoid for complex classes
-
-## Sealed by Default
-
-Mark classes `sealed` unless explicitly designed for inheritance. (CA1852 covers internal types
-only; public types are your call.)
-
-## Strings
-
-Raw string literals (`"""..."""`) for multi-line strings or strings containing quotes.
 
 ## XML Doc Comments
 
@@ -48,16 +33,13 @@ Inline comments: see the comment policy in CLAUDE.md.
 
 ## Error Handling
 
-- Specific exception types — `FileNotFoundException`, `InvalidOperationException`, `ArgumentException`
-- Only catch if you add context, otherwise let it propagate
 - Don't catch `Exception` except at top-level command handlers
 - Guard clauses to fail fast: `ArgumentException.ThrowIfNullOrEmpty(input)`
 - For expected failures (validation, parsing), consider a result type instead of throwing
 
 ## Async
 
-- Thread `CancellationToken` through all public API methods
-- Prefer `Task` over `ValueTask` unless the method frequently completes synchronously
+Prefer `Task` over `ValueTask` unless the method frequently completes synchronously.
 
 ## Dependency Injection
 
@@ -65,6 +47,10 @@ Inline comments: see the comment policy in CLAUDE.md.
 - Program against interfaces
 - Lifetimes: **Transient** stateless, **Scoped** per-request/operation, **Singleton** thread-safe
   shared state, configuration, caches
+
+## Strings
+
+Raw string literals (`"""..."""`) for multi-line strings or strings containing quotes.
 
 ## Logging
 
