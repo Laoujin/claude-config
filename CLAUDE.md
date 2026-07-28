@@ -27,6 +27,7 @@ Markdown tables: pad cells so columns line up in monospace. Use reference-style 
 - Zero linter warnings.
 - Use bun/bunx, not npm/npx.
 - Never use the Superpowers brainstorming "visual companion" / browser-URL feature. Keep brainstorming in the terminal UI.
+- Browser automation: never screenshot for your own verification — assert with `browser_evaluate`. When the check is genuinely visual, report the URL and what to look at; Wouter verifies visually.
 
 ## Commits
 One concern per commit. Imperative subject ≤72 chars. No noise (console.log, commented code, empty files). Stage deliberately.

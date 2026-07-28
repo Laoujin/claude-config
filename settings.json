@@ -58,6 +58,9 @@
       "Edit(**/.ssh/*)",
       "Edit(**/*secret*)"
     ],
+    "ask": [
+      "mcp__playwright__browser_take_screenshot"
+    ],
     "defaultMode": "auto"
   },
   "statusLine": {
