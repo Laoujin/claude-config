@@ -11,6 +11,7 @@
     "sessionUrl": false
   },
   "includeGitInstructions": false,
+  "outputStyle": "terse",
   "permissions": {
     "allow": [
       "Bash(git *)",
