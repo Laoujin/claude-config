@@ -63,6 +63,19 @@
     ],
     "defaultMode": "auto"
   },
+  "model": "opus",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/wouter/projects/.claude/hooks/fleet-mode.sh"
+          }
+        ]
+      }
+    ]
+  },
   "statusLine": {
     "type": "command",
     "command": "bash ~/.claude/scripts/statusline.sh"
@@ -144,7 +157,6 @@
     ]
   },
   "alwaysThinkingEnabled": true,
-  "fastMode": false,
   "companyAnnouncements": [
     "itenium AI Extending your Agent, like a champ"
   ],
