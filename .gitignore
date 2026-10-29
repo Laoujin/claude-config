@@ -36,7 +36,9 @@ mcp-needs-auth-cache.json
 .last-cleanup
 daemon-auth-cooldown
 daemon-auth-status.json
+policy-limits.json
 policy-limits.json.stamp.json
+remote-settings.json
 state/
 
 # Yoink runtime state (settings.json is tracked)
