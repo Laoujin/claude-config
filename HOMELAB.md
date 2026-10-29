@@ -62,9 +62,26 @@ say so instead of guessing.
 
 For querying deploy status + logs (never commit values):
 
-| Var                | Used for                                  |
-|--------------------|-------------------------------------------|
-| `COOLIFY_RO_TOKEN` | Coolify API (deploy status, app config)   |
-| `GRAFANA_RO_TOKEN` | Grafana/Loki HTTP API                      |
+| Var                | Used for                                                     |
+|--------------------|--------------------------------------------------------------|
+| `COOLIFY_RO_TOKEN` | Coolify API (deploy status, app config)                      |
+| `GRAFANA_RO_TOKEN` | Grafana/Loki HTTP API                                        |
+| `BESZEL_RO_TOKEN`  | Beszel API (per-container CPU/memory, the one source for it) |
 
 Values live in `~/.claude/.homelab.env` (git-ignored, `chmod 600`); `source` it before use.
+
+## Beszel — per-container stats (`beszel.lan.sangu.be`)
+
+PocketBase under the hood. The token is a raw JWT, passed without a `Bearer` prefix, and it
+expires on the `users` collection's auth token duration — re-mint it with
+`/api/collections/users/auth-with-password`.
+
+```sh
+curl -sf -H "Authorization: $BESZEL_RO_TOKEN" \
+  "https://beszel.lan.sangu.be/api/collections/container_stats/records?perPage=1&sort=-created" | jq
+```
+
+Collections: `systems`, `system_stats`, `container_stats`, `containers`, `alerts`.
+
+A record the user is not granted returns an empty `items` array, not a 403 — so
+`totalItems: 0` means the account is not attached to that system, not that the data is missing.
