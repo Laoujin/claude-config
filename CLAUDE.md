@@ -23,7 +23,8 @@ Markdown tables: pad cells so columns line up in monospace. Use reference-style 
 
 ## Workflow
 - Run tests after changes.
-- Don't commit/push/add deps without asking.
+- Commit your own changes once green, without asking; never stage others' changes. Ask before pushing.
+- Ask before adding a **big** dependency: a new Docker image or service, a heavyweight library (PDF rendering, headless browser), or a frontend package that meaningfully grows the bundle. Any other dependency, backend ones especially: just add it.
 - Zero linter warnings.
 - Use bun/bunx, not npm/npx.
 - Never use the Superpowers brainstorming "visual companion" / browser-URL feature. Keep brainstorming in the terminal UI.
