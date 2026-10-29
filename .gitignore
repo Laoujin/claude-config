@@ -34,12 +34,20 @@ projects/
 
 mcp-needs-auth-cache.json
 .last-cleanup
+daemon-auth-cooldown
+daemon-auth-status.json
+policy-limits.json.stamp.json
+state/
 
 # Yoink runtime state (settings.json is tracked)
 yoink/sessions/
 yoink/capture/
 yoink/notify.log
 yoink/sounds/
+
+# claude.ai-synced and deleted skills
+skills/synced/
+skills/.trash/
 
 # Installed skills — symlinks into ~/.agents/skills (machine-specific).
 # Own skills stay tracked by default; add a line here when you install one.
